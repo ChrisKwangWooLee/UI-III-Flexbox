@@ -156,12 +156,12 @@ header .logo {
 /* Main Section */
 .main {
 	width: 100%;
-	height: 38.4%;
-	border-bottom: 1px solid gray;
+	height: 39.4%;
+	border-bottom: 1px solid gay;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	padding: 4% 0;
+	padding: 2% 0;
 }
 
 .main_top {
@@ -214,7 +214,6 @@ footer p {
 
 
 /* SERVICES PAGE */
-
 .serv-banner {
 	width: 100%;
 	height: 32.3%;
@@ -236,7 +235,7 @@ footer p {
 }
 
 .serv-main {
-	height: 45%;
+	height: 52%;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -301,4 +300,65 @@ footer p {
 .services-info-img {
 	height: 80%;
 	width: auto;
+}
+
+@media (max-width: 500px) {
+
+	* {
+		/* border: 1px solid gray; */
+	}
+
+	body {
+		/* background: beige; */
+		max-width:500px;
+
+	}
+
+	.serv-main {
+		overflow: scroll;
+	}
+	.row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.serv-facts {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		padding: 4% 0;
+	}
+	
+	.serv-facts .serv-facts-wordy {
+		display: flex;
+		flex-direction: column;
+		font-size: 90%;
+		height: 80%;
+		width: 50%;
+		line-height: 130%;
+	}
+	
+	.serv-facts .serv-facts-wordy ul {
+		line-height: 190%;
+		padding-left: 5%;
+	}
+	.services-info-img {
+		height: auto;
+		width: 100%;
+	}
+}
+
+
+/* PRODUCT PAGE START */
+.prod-banner {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 30%;
+	border: 1px solid red;
+}
+
+.prod-banner img {
+	display: flex;
+	width: 100%;
 }
